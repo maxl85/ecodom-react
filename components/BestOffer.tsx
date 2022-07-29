@@ -5,7 +5,7 @@ import ProductCard from './ProductCard';
 const BestOffer = () => {
     return (
         <>
-            <div className="flex justify-between items-baseline">
+            <div className="flex justify-between items-baseline h-[40px]">
                 <Link href="/">
                     <a className="text-[24px] hover:border-b hover:border-b-main">Лучшее предложение</a>
                 </Link>

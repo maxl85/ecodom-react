@@ -5,6 +5,7 @@ import { MdPhoneInTalk } from 'react-icons/md';
 import { TbMenu2, TbUser, TbShoppingCart, TbSearch } from 'react-icons/tb';
 
 import logo from '../public/logo.png';
+import CatalogDropdown from './CatalogDropdown';
 
 const Header = () => {
     return (
@@ -30,12 +31,13 @@ const Header = () => {
             {/* Bottom header */}
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                    <button className="text-white bg-main hover:bg-hover rounded-md uppercase py-2 px-4">
+                    {/* <button className="text-white bg-main hover:bg-hover rounded-md uppercase py-2 px-4">
                         <div className="flex justify-between items-center">
                             Каталог
                             <TbMenu2 className="text-[24px] ml-2" />
                         </div>
-                    </button>
+                    </button> */}
+                    <CatalogDropdown />
                     <ul className="flex">
                         <li className="ml-8 uppercase cursor-pointer hover:border-b hover:border-b-main">
                             <Link href="/">О компании</Link>
