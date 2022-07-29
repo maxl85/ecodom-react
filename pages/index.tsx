@@ -2,6 +2,9 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import Header from '../components/Header';
 import Head from 'next/head';
+import Promo from '../components/Promo';
+import BestOffer from '../components/BestOffer';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
     return (
@@ -31,8 +34,12 @@ const Home: NextPage = () => {
                 </header>
             </div> */}
                 <Header />
-                <main></main>
+                <main>
+                    <Promo />
+                    <BestOffer />
+                </main>
             </div>
+            <Footer />
         </>
     );
 };

@@ -9,7 +9,13 @@ module.exports = {
             xl: '1128px',
             // '2xl': '1536px',
         },
-        extend: {},
+
+        extend: {
+            colors: {
+                main: '#38B44A',
+                hover: '#288136',
+            },
+        },
     },
-    plugins: [],
+    plugins: [require('@tailwindcss/line-clamp')],
 };
