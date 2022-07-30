@@ -7,7 +7,19 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ');
 }
 
-const MyLink = React.forwardRef<HTMLAnchorElement, LinkProps & HTMLProps<HTMLAnchorElement>>(({ href, children, ...rest }, ref) => {
+// const MyLink = React.forwardRef<HTMLAnchorElement, LinkProps & HTMLProps<HTMLAnchorElement>>((props, ref) => {
+//     let { href, children, ...rest } = props;
+//     return (
+//         <Link href={href}>
+//             <a ref={ref} {...rest}>
+//                 {children}
+//             </a>
+//         </Link>
+//     );
+// });
+
+const MyLink = React.forwardRef((props: any, ref: any) => {
+    let { href, children, ...rest } = props;
     return (
         <Link href={href}>
             <a ref={ref} {...rest}>
@@ -35,130 +47,130 @@ const CatalogDropdown = () => {
                         <div className="w-[300px] border-r p-2">
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/">
-                                        <a className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>Кровельные материалы</a>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                        Кровельные материалы
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Металл
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Рубероид и наплавляемые материалы
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Краски
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Пластик
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Электро и бензо инструмент
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Штукатурные смеси
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Электрика
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Хозтовары
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                         </div>
                         <div className="w-[300px] p-2">
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Профлист
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Газоблок и кирпич
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Цемент
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Линолеум
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Утеплители
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Расходные материалы
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Сантехника
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Крепеж
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <a href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Садовый инвентарь
-                                    </a>
+                                    </MyLink>
                                 )}
                             </Menu.Item>
                         </div>
