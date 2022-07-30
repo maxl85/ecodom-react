@@ -3,7 +3,7 @@ import React from 'react';
 
 const Promo = () => {
     return (
-        <div className="grid grid-cols-12 gap-6 mb-[50px]">
+        <div className="grid grid-cols-12 gap-6 pt-[200px] mb-[50px]">
             <Link href="/">
                 <a className="col-span-3 h-[264px] bg-gray-300"></a>
             </Link>

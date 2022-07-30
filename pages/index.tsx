@@ -12,6 +12,7 @@ const Home: NextPage = () => {
             <Head>
                 <title>ЭкоДом - Домашняя страница</title>
             </Head>
+            {/* <Header /> */}
             <div className="container mx-auto">
                 {/* <div className="grid grid-cols-12 gap-6 border border-black">
                 <div className="min-h-screen bg-gray-200 text-center">1</div>
