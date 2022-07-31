@@ -25,8 +25,6 @@ const Header = () => {
         }
     };
 
-    console.log(navbar);
-
     if (navbar) {
         return (
             <header className="container fixed flex justify-between items-center w-full shadow-[0_10px_5px_-5px_rgba(0,0,0,0.2)] bg-white h-[80px] z-[100] ease-in-out duration-300">

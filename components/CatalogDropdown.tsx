@@ -47,63 +47,63 @@ const CatalogDropdown = () => {
                         <div className="w-[300px] border-r p-2">
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Кровельные материалы
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Металл
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Рубероид и наплавляемые материалы
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Краски
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Пластик
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Электро и бензо инструмент
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Штукатурные смеси
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Электрика
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Хозтовары
                                     </MyLink>
                                 )}
@@ -112,63 +112,63 @@ const CatalogDropdown = () => {
                         <div className="w-[300px] p-2">
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Профлист
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Газоблок и кирпич
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Цемент
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Линолеум
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Утеплители
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Расходные материалы
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Сантехника
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Крепеж
                                     </MyLink>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <MyLink href="/" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
+                                    <MyLink href="/category/category" className={classNames(active ? 'bg-lite text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-lg')}>
                                         Садовый инвентарь
                                     </MyLink>
                                 )}

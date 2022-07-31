@@ -4,7 +4,7 @@ import React from 'react';
 const ProductCard = () => {
     return (
         <div className="col-span-3 ">
-            <Link href="/">
+            <Link href="/product/product">
                 <a>
                     <div className="h-[264px] mb-[10px] bg-gray-300"></div>
                     <p className="line-clamp-2 mb-[10px]">Название товара</p>

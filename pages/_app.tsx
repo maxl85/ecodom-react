@@ -1,6 +1,8 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -10,7 +12,13 @@ function MyApp({ Component, pageProps }: AppProps) {
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
-            <Component {...pageProps} />
+            <div className="flex flex-col justify-between h-screen">
+                <div className="container mx-auto">
+                    <Header />
+                    <Component {...pageProps} />
+                </div>
+                <Footer />
+            </div>
         </>
     );
 }

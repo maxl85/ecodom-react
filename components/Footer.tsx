@@ -6,9 +6,9 @@ import logo from '../public/logo2.png';
 
 const Footer = () => {
     return (
-        <footer className="h-[150px] bg-main">
+        <footer className="bg-main">
             <div className="container mx-auto">
-                <div className="flex justify-between items-center pt-[50px]">
+                <div className="flex justify-between items-center py-[50px]">
                     <Link href="/">
                         <a>
                             <Image className="cursor-pointer" src={logo} width={168} height={42} alt="Logo2"></Image>
