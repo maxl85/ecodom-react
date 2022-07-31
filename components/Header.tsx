@@ -42,7 +42,7 @@ const Header = () => {
                     <input className="w-[456px] h-[32px] border border-gray-300 rounded-lg pl-4" placeholder="Поиск товара ..." />
                     <TbSearch className="absolute top-[8px] right-[15px]" />
                 </div>
-                <ul className="flex">
+                <ul className="flex h-[27px]">
                     <li className="uppercase cursor-pointer hover:border-b hover:border-b-main">
                         <Link href="/">
                             <a>
@@ -88,7 +88,7 @@ const Header = () => {
                 <div className="flex items-center justify-between">
                     <div className="flex items-center">
                         <CatalogDropdown />
-                        <ul className="flex">
+                        <ul className="flex h-[25px]">
                             <li className="ml-8 uppercase cursor-pointer hover:border-b hover:border-b-main">
                                 <Link href="/">О компании</Link>
                             </li>
@@ -103,7 +103,7 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
-                    <ul className="flex">
+                    <ul className="flex h-[27px]">
                         <li className="uppercase cursor-pointer hover:border-b hover:border-b-main">
                             <Link href="/">
                                 <a>

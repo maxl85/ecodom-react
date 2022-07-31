@@ -14,7 +14,7 @@ const Footer = () => {
                             <Image className="cursor-pointer" src={logo} width={168} height={42} alt="Logo2"></Image>
                         </a>
                     </Link>
-                    <ul className="flex text-white">
+                    <ul className="flex h-[25px] text-white">
                         <li className="ml-8 uppercase cursor-pointer hover:border-b hover:border-b-main">
                             <Link href="/">О компании</Link>
                         </li>

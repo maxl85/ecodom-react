@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
 import { TbChevronRight, TbHome } from 'react-icons/tb';
+import { Carousel } from 'react-responsive-carousel';
 
 const product = {
     name: 'Название товара',
@@ -13,7 +14,7 @@ const product = {
 
 const Product: React.FC = () => {
     return (
-        <div>
+        <>
             <Head>
                 <title>ЭкоДом - Категории</title>
             </Head>
@@ -42,9 +43,25 @@ const Product: React.FC = () => {
                 </nav>
             </div>
             <div className="grid grid-rows-2 grid-cols-12 gap-6 mb-[50px] mt-[25px]">
-                <div className="col-span-6 row-span-2 bg-gray-300 h-[552px]">Picture</div>
+                <div className="col-span-6 row-span-2 h-[552px]">
+                    <Carousel width={552} showStatus={false} showIndicators={false}>
+                        <div>
+                            <img src="https://picsum.photos/id/1018/552/552/" />
+                            {/* <p className="legend">Legend 1</p> */}
+                        </div>
+                        <div>
+                            <img src="https://picsum.photos/id/1015/552/552/" />
+                            {/* <p className="legend">Legend 2</p> */}
+                        </div>
+                        <div>
+                            <img src="https://picsum.photos/id/1019/552/552/" />
+                            {/* <p className="legend">Legend 3</p> */}
+                        </div>
+                    </Carousel>
+                </div>
             </div>
-        </div>
+            <div className="h-96"></div>
+        </>
     );
 };
 
