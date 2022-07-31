@@ -29,7 +29,10 @@ const MyLink = React.forwardRef((props: any, ref: any) => {
     );
 });
 
+MyLink.displayName = 'MyLink';
+
 const CatalogDropdown = () => {
+    // function CatalogDropdown() {
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
@@ -180,5 +183,7 @@ const CatalogDropdown = () => {
         </Menu>
     );
 };
+
+CatalogDropdown.displayName = 'CatalogDropdown';
 
 export default CatalogDropdown;
