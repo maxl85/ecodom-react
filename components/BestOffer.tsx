@@ -1,8 +1,34 @@
+import axios from 'axios';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
 
+interface IProduct {
+    id: number;
+    brand: string;
+    category: string;
+    countInStock: number;
+    createdAt: string;
+    description: string;
+    image: string;
+    name: string;
+    price: number;
+    user: number;
+}
+
 const BestOffer = () => {
+    const [products, setProducts] = useState<IProduct[]>([]);
+
+    useEffect(() => {
+        async function fetchProducts() {
+            const { data } = await axios.get<IProduct[]>('http://127.0.0.1:8000/api/products/');
+            setProducts(data);
+        }
+        fetchProducts();
+    }, []);
+
+    console.log(products);
+
     return (
         <>
             <div className="flex justify-between items-baseline h-[40px]">
@@ -14,10 +40,9 @@ const BestOffer = () => {
                 </Link>
             </div>
             <div className="grid grid-cols-12 gap-6 mb-[50px] mt-[25px]">
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
+                {products.slice(0, 4).map((product) => (
+                    <ProductCard key={product.id} product={product}></ProductCard>
+                ))}
             </div>
         </>
     );
