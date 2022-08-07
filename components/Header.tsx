@@ -7,7 +7,7 @@ import { TbMenu2, TbUser, TbShoppingCart, TbSearch } from 'react-icons/tb';
 import logo from '../public/logo.png';
 import CatalogDropdown from './CatalogDropdown';
 
-const Header = () => {
+const Header = (): JSX.Element => {
     const prevScrollY = useRef(0);
     const [navbar, setNavbar] = useState(false);
 
