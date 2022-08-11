@@ -2,6 +2,8 @@ Add layout https://nextjs.org/docs/basic-features/layouts
 
 Add .env https://nextjs.org/docs/basic-features/environment-variables
 
+Переделать type to interface
+
 Добавить необходимые тэги
 [Udemy] React + Next.js - с нуля. TypeScript, Hooks, SSR и CSS Grid (2022) [RU]\19 - Подготовка к production
 
