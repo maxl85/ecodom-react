@@ -1,0 +1,23 @@
+Add layout https://nextjs.org/docs/basic-features/layouts
+
+Add .env https://nextjs.org/docs/basic-features/environment-variables
+
+Переделать type to interface
+
+Добавить необходимые тэги
+[Udemy] React + Next.js - с нуля. TypeScript, Hooks, SSR и CSS Grid (2022) [RU]\19 - Подготовка к production
+
+
+Настроить HTTPS в продакшене
+
+
+Подсветка активного меню
+https://www.youtube.com/watch?v=rocqGSMlus4&list=PLNkWIWHIRwMHjz7hM5o10BNc6dq0OMd2U&index=6
+
+
+Запрос в базу будет на сервере. getStaticProps
+https://www.youtube.com/watch?v=ZCCEl9J8zv0&list=PLNkWIWHIRwMHjz7hM5o10BNc6dq0OMd2U&index=8
+
+
+Динамический роутинг
+https://www.youtube.com/watch?v=gVl3rnjBurU&list=PLNkWIWHIRwMHjz7hM5o10BNc6dq0OMd2U&index=9

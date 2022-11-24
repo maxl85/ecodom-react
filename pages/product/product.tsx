@@ -1,6 +1,7 @@
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import React from 'react';
+import axios from 'axios';
 import { TbChevronRight, TbHome } from 'react-icons/tb';
 import { Carousel } from 'react-responsive-carousel';
 
@@ -13,6 +14,18 @@ const product = {
 };
 
 const Product: React.FC = () => {
+    // const [product, setProduct] = useState([]);
+
+    // useEffect(() => {
+    //     async function fetchProduct() {
+    //         const { data } = await axios.get('http://127.0.0.1:8000/api/products/');
+    //         setProduct(data);
+    //     }
+    //     fetchProduct();
+    // }, []);
+
+    // console.log(product);
+
     return (
         <>
             <Head>

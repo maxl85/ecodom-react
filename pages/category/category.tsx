@@ -1,11 +1,13 @@
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { NextPage } from 'next/types';
-import React from 'react';
 import { TbHome, TbChevronRight, TbChevronLeft } from 'react-icons/tb';
+import axios from 'axios';
+
 import ProductCard from '../../components/ProductCard';
 
-const product = {
+const bread = {
     name: 'Название категории',
     breadcrumbs: [
         { id: 1, name: <TbHome className="text-[22px]" />, href: '/' },
@@ -13,7 +15,32 @@ const product = {
     ],
 };
 
+interface IProduct {
+    id: number;
+    brand: string;
+    category: string;
+    countInStock: number;
+    createdAt: string;
+    description: string;
+    image: string;
+    name: string;
+    price: number;
+    user: number;
+}
+
 const Сategory: React.FC = () => {
+    const [products, setProducts] = useState<IProduct[]>([]);
+
+    useEffect(() => {
+        async function fetchProducts() {
+            const { data } = await axios.get<IProduct[]>('http://127.0.0.1:8000/api/products/');
+            setProducts(data);
+        }
+        fetchProducts();
+    }, []);
+
+    // console.log(products);
+
     return (
         <>
             <Head>
@@ -22,7 +49,7 @@ const Сategory: React.FC = () => {
             <div className="pt-[190px]">
                 <nav aria-label="Breadcrumb">
                     <ol role="list" className="flex items-center space-x-2">
-                        {product.breadcrumbs.map((breadcrumb) => (
+                        {bread.breadcrumbs.map((breadcrumb) => (
                             <li key={breadcrumb.id}>
                                 <div className="flex items-center">
                                     <Link href={breadcrumb.href}>
@@ -37,22 +64,25 @@ const Сategory: React.FC = () => {
                         ))}
                         <li className="text-sm">
                             <p aria-current="page" className="font-medium text-gray-500">
-                                {product.name}
+                                {bread.name}
                             </p>
                         </li>
                     </ol>
                 </nav>
             </div>
             <p className="my-[25px] font-medium text-[24px]">Название категории</p>
-            <div className="grid grid-rows-2 grid-cols-12 gap-6 mb-[50px] mt-[25px]">
-                <div className="col-span-3 row-span-2 bg-gray-300">Фильтры</div>
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
+            <div className="grid grid-cols-12 gap-6 mb-[50px] mt-[25px]">
+                <div className="col-span-3 bg-gray-300">Фильтры</div>
+
+                <div className="col-span-9">
+                    <div className="grid grid-cols-9 gap-6">
+                        {products.map((product) => (
+                            <ProductCard key={product.id} product={product}></ProductCard>
+                        ))}
+                    </div>
+                </div>
             </div>
+
             <div className="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
                 <div className="flex-1 flex justify-between sm:hidden">
                     <a href="#" className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
